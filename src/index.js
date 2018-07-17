@@ -1,5 +1,5 @@
 import './styles/app.styl';
-import './styles/fonts/lobster13.styl';
-import './styles/fonts/notosans.styl';
-import './styles/fonts/timesnewroman.styl';
+import './styles/fonts/catamaran.styl';
+import './styles/fonts/gotham.styl';
+import './styles/fonts/playfair.styl';
 
