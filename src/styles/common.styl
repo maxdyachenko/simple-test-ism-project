@@ -28,9 +28,26 @@ button
 	border none
 	outline none
 	cursor pointer
+input
+	border none
+	outline none
 
+toggle-dropdown()
+	&:after
+		display block
+		content ''
+		position absolute
+		width 4px
+		height @width
+		right 0
+		top 50%
+		transform translateY(-50%) rotate(45deg)
+		border-top 1px solid COLOR_BRAND_WHITE
+		border-right @border-top
 .container
-	max-width 1240px
+	max-width 1280px
+	margin auto
+	padding 0 20px
 .main-btn
 	padding 15px 20px
 	color COLOR_BRAND_WHITE
@@ -50,14 +67,4 @@ button
 		min-width 90px
 		padding-right 15px
 		text-align left
-		&:after
-			display block
-			content ''
-			position absolute
-			width 4px
-			height @width
-			right 0
-			top 50%
-			transform translateY(-50%) rotate(45deg)
-			border-top 1px solid COLOR_BRAND_WHITE
-			border-right @border-top
+		toggle-dropdown()

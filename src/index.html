@@ -9,22 +9,24 @@
 </head>
 <body>
 <header class="main-header">
-    <div class="container">
-        <div class="top-content">
+    <div class="top-content">
+        <div class="container">
             <div class="info">
                 <div class="country-dropdown">
-                    <!--custom select here-->
+                    <p><span class="flag-icon"><img src="./images/nl-flag.png" alt="Flag"></span>Nederlands</p>
                 </div>
                 <div class="work-info">
                     <p class="schedule">
                         Call until 21:00
                         <span class="online-indicator"></span>
                     </p>
-                    <a href="tel: 035 - 623 66 26">035 - 623 66 26</a>
+                    <a class="phone" href="tel: 035 - 623 66 26">035 - 623 66 26</a>
                 </div>
             </div>
             <div class="logo">
-                <img src="/src/images/logo.png" alt="Logo">
+                <a href="#">
+                    <img src="/src/images/logo.png" alt="Logo">
+                </a>
             </div>
             <div class="action-side">
                 <div class="nav-links">
@@ -33,22 +35,25 @@
                         <li><a href="#">Service</a></li>
                     </ul>
                 </div>
-                <div class="auth-dropdown">
-                    <p>Login / Registration</p>
-                </div>
-                <div class="cart-info">
-                    <div class="cart-icon">
-                        <i></i>
-                        <p class="counts">2</p>
+                <div class="right-align">
+                    <div class="auth-dropdown">
+                        <p>Log in / Registration</p>
                     </div>
-                    <div class="sum-dropdown">
-                        <i></i>
-                        <p>216,90</p>
+                    <div class="cart-info">
+                        <div class="cart-icon">
+                            <div class="icon"></div>
+                            <p class="counts">2</p>
+                        </div>
+                        <div class="sum-dropdown">
+                            <p>€ 216,90</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-content">
+    </div>
+    <div class="bottom-content">
+        <div class="container">
             <nav>
                 <ul>
                     <li class="dropdown"><a href="#">Category 1</a></li>
@@ -61,7 +66,9 @@
             <div class="search-field">
                 <form action="">
                     <input type="search" placeholder="Search...">
-                    <button class="search-icon"></button>
+                    <button class="search-icon">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </form>
             </div>
         </div>
