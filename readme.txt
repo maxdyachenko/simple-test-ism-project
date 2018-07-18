@@ -6,7 +6,8 @@
 
 Можно использовать:
 - HTML5
-- CSS3(flexbox), CSS grid, bootstrap deprecated
+- CSS3(flexbox)
+- CSS grid, bootstrap запрещено использовать
 - по желанию можно использовать LESS, SCSS...
 - JS, jQuery, third party libraries
 
