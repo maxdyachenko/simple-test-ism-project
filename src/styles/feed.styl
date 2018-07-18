@@ -1,15 +1,10 @@
-.feed-wrapper
-	padding 55px 0
+.feed-wrap
 	background url(../images/bg.jpg) 0 0 / contain repeat
-	.container
+	.main-content
 		display flex
 		justify-content space-between
 		> *
 			flex-basis 50%
-	h2
-		margin-bottom 15px
-		color COLOR_BRAND_DARK_BLACK
-		font 400 30px / 1.2 'Playfair Display'
 	.slider-article
 		position relative
 		padding 0 60px 60px 0
@@ -98,6 +93,8 @@
 		margin-left 55px
 		padding 30px 43% 30px 22px
 		background COLOR_BRAND_GREEN
+		h2
+			font-size 28px
 		.content
 			margin-top 25px
 		.title
@@ -114,5 +111,24 @@
 		width 32%
 		max-height 100%
 		object-fit contain
+	.advantages
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		margin-top 45px
+		.icon
+			margin-right 10px
+			flex-shrink 0
+		.block
+			display flex
+			width 30%
+			padding 10px 0
+			.text
+				margin-left 10px
+				color COLOR_BRAND_DARK_GREY
+				font 400 15px / 1.2 'Catamaran'
+				&.bold
+					font-weight 600
+					color COLOR_BRAND_DARK_BLACK
 
 

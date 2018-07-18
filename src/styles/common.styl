@@ -10,12 +10,15 @@ body
 img, video
 	display block
 	max-width 100%
-h1, h2
-	margin-bottom 2.5rem
-	letter-spacing .1px
-	font 400 25px / 1.2 TimesNewRoman
+section
+	padding 55px 0
+h2, h3
+	margin-bottom 15px
+	color COLOR_BRAND_DARK_BLACK
+	font 400 30px / 1.2 'Playfair Display'
 h2
-	font-size 20px
+	font-size 36px
+	text-align center
 a
 	text-decoration none
 	color inherit
@@ -68,3 +71,13 @@ toggle-dropdown()
 		padding-right 15px
 		text-align left
 		toggle-dropdown()
+.patterned
+	position relative
+	&:after
+		content '\007e'
+		position absolute
+		bottom 0
+		left 50%
+		transform translateX(-50%)
+		color COLOR_BRAND_LIGHT_GREY
+		font 400 34px / 0 'Playfair Display'
