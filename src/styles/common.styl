@@ -51,6 +51,37 @@ toggle-dropdown()
 	max-width 1280px
 	margin auto
 	padding 0 20px
+.grey-bg
+	background url(../images/bg.jpg) 0 0 / contain repeat
+.controls
+	position absolute
+	cursor pointer
+	i
+		display inline-block
+		padding 3px
+		border solid COLOR_BRAND_LIGHT_GREY4
+		border-width 0 3px 3px 0
+	.right
+		margin-left 6px
+		transform rotate(-45deg)
+	.left
+		margin-right 6px
+		transform rotate(135deg)
+.orange-arrow:before
+	position relative
+	left -7px
+	top 50%
+	content ''
+	display inline-block
+	border solid COLOR_BRAND_LIGHT_ORANGE
+	border-width 0 1px 1px 0
+	padding 2px
+	transform rotate(-45deg) translateY(-50%)
+.cart-icon .icon
+	display inline-block
+	width 19px
+	height 17px
+	background url(../images/cart.png) 0 0 / contain no-repeat
 .main-btn
 	padding 15px 20px
 	color COLOR_BRAND_WHITE
