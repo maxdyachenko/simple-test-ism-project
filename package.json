@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "linearicons": "^1.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   }
