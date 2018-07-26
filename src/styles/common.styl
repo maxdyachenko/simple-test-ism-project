@@ -48,13 +48,15 @@ toggle-dropdown()
 		border-top 1px solid COLOR_BRAND_WHITE
 		border-right @border-top
 .container
-	max-width 1280px
+	max-width 1320px
 	margin auto
-	padding 0 20px
+	padding 0 40px
 .grey-bg
 	background url(../images/bg.jpg) 0 0 / contain repeat
 .controls
 	position absolute
+	top 0
+	left 0
 	cursor pointer
 	i
 		display inline-block
@@ -75,9 +77,9 @@ toggle-dropdown()
 			top 50%
 			padding 5px
 			&.left
-				left -35px
+				left 0
 			&.right
-				right -35px
+				right 0
 .orange-arrow:before
 	position relative
 	left -7px
@@ -124,3 +126,10 @@ toggle-dropdown()
 		transform translateX(-50%)
 		color COLOR_BRAND_LIGHT_GREY
 		font 400 34px / 0 'Playfair Display'
+
+@media (max-width: 800px)
+	.container
+		padding 0 20px
+@media (max-width: 800px)
+	.container
+		padding 0 10px

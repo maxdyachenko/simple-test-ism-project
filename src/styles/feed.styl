@@ -7,12 +7,15 @@
 	.slider-article
 		position relative
 		padding 0 60px 60px 0
+		align-self flex-start
 		.content
 			margin-bottom 15px
 			color COLOR_BRAND_DARK_GREY
 			font 400 14px / 1.35 'Catamaran'
 	.slider
 		position relative
+		.controls
+			top auto
 	.controls
 		display flex
 		justify-content space-between
@@ -118,5 +121,38 @@
 				&.bold
 					font-weight 600
 					color COLOR_BRAND_DARK_BLACK
+@media (max-width: 800px)
+	.feed-wrap
+		.right-articles, .contacts-article
+			margin-top 30px
+		.slider-article
+			padding-right 0
+		.contacts-article
+			margin-left 0
+		.main-content
+			flex-wrap wrap
+			> *
+				flex-basis 100%
 
+@media (max-width: 600px)
+	.feed-wrap
+		.slider .controls
+			top auto
+			left auto
+			right 0
+			bottom auto
+		.slide-info
+			width 90%
+			right 5%
+		.right-articles
+			display none
+
+@media (max-width: 480px)
+	.feed-wrap
+		.advantages
+			.block
+				display none
+				&:nth-of-type(1)
+					display flex
+					width 100%
 

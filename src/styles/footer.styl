@@ -1,9 +1,12 @@
 .main-footer
 	.socials-wrap
+		padding-right 20px
 		border-right  1px dotted COLOR_BRAND_LIGHT_GREY
 	.socials-wrap, .form-wrap
 		flex-basis 50%
 		text-align center
+	.form-wrap
+		padding-left 20px
 	.title
 		color COLOR_BRAND_DARK_BLACK
 		font 600 15px / 1.2 'Catamaran'
@@ -25,6 +28,7 @@
 	form
 		margin-top 20px
 	input
+		width 280px
 		border 1px solid COLOR_BRAND_GREY2
 		margin-right 8px
 	.first-line-content
@@ -62,7 +66,9 @@
 			justify-content space-between
 			align-items center
 			flex-wrap wrap
-			padding 12px 0
+			> *
+				padding-top 12px
+				padding-bottom 12px
 	.copy
 		flex-grow 2
 	.company-name, .copy
@@ -82,3 +88,47 @@
 		img
 			height 17px
 			width auto
+
+@media (max-width: 800px)
+	.main-footer
+		input
+			width 30%
+		.socials-wrap, .form-wrap
+			padding 0
+			flex-basis 100%
+		.form-wrap
+			padding-top 25px
+		.socials-wrap
+			position relative
+			padding-bottom 25px
+			border-right 0
+			&:after
+				content ''
+				display block
+				position absolute
+				width 90%
+				bottom 0
+				left 50%
+				transform translateX(-50%)
+				border-bottom 1px dotted COLOR_BRAND_LIGHT_GREY
+		.first-line-content .container
+			flex-wrap wrap
+
+@media (max-width: 600px)
+	.main-footer
+		.company-name
+			margin-left 0
+		.author-rights .container
+			flex-direction  column
+
+
+@media (max-width: 480px)
+	.main-footer
+		form
+			display flex
+			justify-content space-between
+			button
+				flex-shrink 0
+		input
+			width auto
+			max-width 100%

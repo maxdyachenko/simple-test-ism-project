@@ -5,7 +5,7 @@
 		text-align center
 		font 400 15px / 1.2 'Catamaran'
 	.content
-		padding-top 10px
+		padding 10px 40px 0 40px
 	.thumb
 		display block
 		overflow hidden
@@ -28,3 +28,20 @@
 		text-align center
 		font 400 15px / 1.2 'Catamaran'
 		color COLOR_BRAND_DARK_BLACK
+@media (max-width: 1024px)
+	.items-list-wrap
+		.content
+			padding 10px 20px 0 20px
+@media (max-width: 768px)
+	.items-list-wrap
+		li
+			flex-basis 20%
+@media (max-width: 600px)
+	.items-list-wrap
+		li
+			flex-basis 33%
+
+@media (max-width: 380px)
+	.items-list-wrap
+		.content
+			padding 10px 10px 0

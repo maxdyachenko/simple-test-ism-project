@@ -3,6 +3,8 @@
 		text-align center
 	.products
 		position relative
+		margin 0 -20px
+		padding 0 20px
 	.main-btn
 		padding 7px 15px
 		&:not(last-of-type)
@@ -64,8 +66,10 @@
 	.item-li
 		position relative
 		padding 25px 32px
-		width 19%
+		width 20%
 		background COLOR_BRAND_WHITE
+		&:not(:last-of-type)
+			margin-right 15px
 	.ribbon
 		position absolute
 		max-width 80%
@@ -111,4 +115,13 @@
 				position absolute
 				left 0
 				bottom 100%
+@media (max-width: 1024px)
+	.products-list-wrap
+		.item-li
+			width 24%
+
+@media (max-width: 768px)
+	.products-list-wrap
+		.main-btn
+			margin-top 10px
 
