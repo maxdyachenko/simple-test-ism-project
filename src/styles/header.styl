@@ -8,6 +8,21 @@
 			align-items center
 			> div
 				flex-basis 33%
+	.mobile-menu
+		display none
+		p
+			margin 5px 0 0 -2px
+			font 400 8px / 1.4 'Roboto'
+			color COLOR_BRAND_WHITE
+			text-transform uppercase
+		.hamburger
+			cursor pointer
+			span
+				display block
+				width 16px
+				height 2px
+				margin-bottom 3px
+				background COLOR_BRAND_WHITE
 	.logo img
 		margin auto
 	.right-align
@@ -157,4 +172,29 @@
 		.auth-dropdown
 			display block
 			margin-right 0
+
+@media (max-width: 600px)
+	.main-header
+		.bottom-content
+			nav
+				display none
+			.search-field
+				width 100%
+				input
+					padding 12px 14px
+					width 100%
+					border-top 1px solid COLOR_BRAND_LIGHT_GREY6
+					border-left 1px solid COLOR_BRAND_LIGHT_GREY6
+					border-radius 3px
+		.mobile-menu
+			display block
+		.top-content
+			padding 10px 0
+			.container
+				> div
+					flex-basis 20%
+				.logo
+					flex-basis 60%
+			.info, .nav-links, .auth-dropdown, .sum-dropdown
+				display none
 
