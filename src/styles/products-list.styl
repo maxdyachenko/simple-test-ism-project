@@ -16,6 +16,7 @@
 		ul
 			display flex
 			justify-content space-between
+			overflow hidden
 		article
 			display flex
 			flex-direction column
@@ -66,7 +67,8 @@
 	.item-li
 		position relative
 		padding 25px 32px
-		width 20%
+		width 19%
+		flex-shrink 0
 		background COLOR_BRAND_WHITE
 		&:not(:last-of-type)
 			margin-right 15px
@@ -115,13 +117,31 @@
 				position absolute
 				left 0
 				bottom 100%
-@media (max-width: 1024px)
+@media (max-width: 1280px)
 	.products-list-wrap
 		.item-li
 			width 24%
-
+@media (max-width: 1024px)
+	.products-list-wrap
+		.item-li
+			width 33%
+@media (max-width: 800px)
+	.products-list-wrap
+		.slides
+			padding 0 30px
+		.products
+			margin 0
+			padding 0
 @media (max-width: 768px)
 	.products-list-wrap
 		.main-btn
 			margin-top 10px
+@media (max-width: 720px)
+	.products-list-wrap
+		.item-li
+			width 50%
+@media (max-width: 480px)
+	.products-list-wrap
+		.item-li
+			width 100%
 

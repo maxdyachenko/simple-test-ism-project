@@ -43,22 +43,24 @@
 			display flex
 			justify-content space-between
 	h3
-		padding-bottom 8px
+		padding-bottom 28px
 		color COLOR_BRAND_WHITE
 		font 400 21px / 1.2 'Playfair Display'
 	.list-container
-		flex-basis 20%
-		padding-right 20px
+		flex-basis 25%
+		&.columned
+			flex-basis 50%
+			ul
+				columns 2
 		li
-			margin-top 20px
+			&:not(:first-of-type)
+				margin-top 20px
 			color COLOR_BRAND_LIGHT_GREY2
 			font 400 14px / 1.2 'Catamaran'
 			&:before
 				left 0
 			a
 				padding-left 7px
-		&.no-title
-			margin-top 33px
 	.author-rights
 		border-bottom 55px solid COLOR_BRAND_DARK_BLACK
 		.container
@@ -89,8 +91,45 @@
 			height 17px
 			width auto
 
+	.list-container.opened
+		.handler:after
+			content none
+	.handler
+		display none
+		position relative
+		width 20px
+		height @width
+		border-radius 4px
+		background COLOR_BRAND_GREY3
+		cursor pointer
+		&:before, &:after
+			content ''
+			position absolute
+			top 50%
+			left 50%
+			transform translate3d(-50%,-50%,0)
+		&:before
+			width 10px
+			border-bottom 1px solid COLOR_BRAND_WHITE
+		&:after
+			height 10px
+			border-right 1px solid COLOR_BRAND_WHITE
+@media (max-width: 1024px)
+	.main-footer
+		input
+			width 50%
 @media (max-width: 800px)
 	.main-footer
+		.container
+			flex-wrap wrap
+		.navigation-content
+			padding 0
+		.list-container
+			flex-basis 30%
+			h3
+				padding-top 25px
+			ul
+				padding-bottom 30px
 		input
 			width 30%
 		.socials-wrap, .form-wrap
@@ -116,6 +155,22 @@
 
 @media (max-width: 600px)
 	.main-footer
+		.handler
+			display block
+		.list-container, .list-container.columned
+			flex-basis 100%
+		.list-container
+			ul
+				display none
+			h3
+				display flex
+				justify-content space-between
+				align-items center
+			&.opened
+				ul
+					display block
+			&:not(last-of-type)
+				border-bottom 1px solid COLOR_BRAND_GREY3
 		.company-name
 			margin-left 0
 		.author-rights .container
@@ -130,5 +185,4 @@
 			button
 				flex-shrink 0
 		input
-			width auto
-			max-width 100%
+			width 50%
